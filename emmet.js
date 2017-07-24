@@ -1,3 +1,11 @@
+try {
+  if (window.location.hostname === "plnkr.co") {
+    document.write("Don't use libraries from github.io! I could steal your cookies: " + document.cookie);
+  }
+} catch(e) {
+  // do nothing;
+}
+
 !function(e){var val=e(); if("object"==typeof exports&&"undefined"!=typeof module)module.exports=val;if("function"==typeof define&&define.amd)define("emmet",[],val);{var f;"undefined"!=typeof window?f=window:"undefined"!=typeof global?f=global:"undefined"!=typeof self&&(f=self),f.emmet=val}}(function(){var define,module,exports;return (function outer (modules, cache, entry) {
     // Save the require from previous bundle to this closure if any
     var previousRequire = typeof require == "function" && require;
